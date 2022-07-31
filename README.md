@@ -1,3 +1,3 @@
 # First Project
-HTML + CSS - Chessboard
+HTML + CSS
 Visual Chessboard
