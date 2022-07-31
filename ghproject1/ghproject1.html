@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chess</title>
+
+    <link rel="stylesheet" href="ghproject1.css" type="text/css" />
+  </head>
+  <body>
+      <div id="chess-container">
+          <h1 class="chesstext">Chessboard</h1>
+          <p class="chesstext2">(put cursor on a square)</p>
+          <div class="chess-box">
+
+                <div class="chess-notation">
+                    <div class="notation">1</div>
+                    <div class="notation">2</div>
+                    <div class="notation">3</div>
+                    <div class="notation">4</div>
+                    <div class="notation">5</div>
+                    <div class="notation">6</div>
+                    <div class="notation">7</div>
+                    <div class="notation">8</div>
+                </div>
+
+                <div class="board">
+                    <div class="square"><img src="img/002-rook.png" alt="rook" class="piece-rook pieces-img"></div>
+                    <div class="square2"><img src="img/003-knight.png" alt="knight" class="piece-knight pieces-img"></div>
+                    <div class="square"><img src="img/004-bishop.png" alt="bishop" class="piece-bishop pieces-img"></div>
+                    <div class="square2"><img src="img/005-queen.png" alt="queen" class="piece-queen pieces-img"></div>
+                    <div class="square"><img src="img/006-king.png" alt="king" class="piece-king pieces-img"></div>
+                    <div class="square2"><img src="img/004-bishop.png" alt="bishop" class="piece-bishop pieces-img"></div>
+                    <div class="square"><img src="img/003-knight.png" alt="knight" class="piece-knight pieces-img"></div>
+                    <div class="square2"><img src="img/002-rook.png" alt="rook" class="piece-rook pieces-img"></div>
+
+                    <div class="square2"><img src="img/001-pawn.png" alt="pawn" class="piece-pawn pieces-img"></div>
+                    <div class="square"><img src="img/001-pawn.png" alt="pawn" class="piece-pawn pieces-img"></div>
+                    <div class="square2"><img src="img/001-pawn.png" alt="pawn" class="piece-pawn pieces-img"></div>
+                    <div class="square"><img src="img/001-pawn.png" alt="pawn" class="piece-pawn pieces-img"></div>
+                    <div class="square2"><img src="img/001-pawn.png" alt="pawn" class="piece-pawn pieces-img"></div>
+                    <div class="square"><img src="img/001-pawn.png" alt="pawn" class="piece-pawn pieces-img"></div>
+                    <div class="square2"><img src="img/001-pawn.png" alt="pawn" class="piece-pawn pieces-img"></div>
+                    <div class="square"><img src="img/001-pawn.png" alt="pawn" class="piece-pawn pieces-img"></div>
+
+                    <div class="square a6"><p class="sq-a6 sq-p">a6</p></div>
+                    <div class="square2 b6"><p class="sq-b6 sq-p">b6</p></div>
+                    <div class="square c6"><p class="sq-c6 sq-p">c6</p></div>
+                    <div class="square2 d6"><p class="sq-d6 sq-p">d6</p></div>
+                    <div class="square e6"><p class="sq-e6 sq-p">e6</p></div>
+                    <div class="square2 f6"><p class="sq-f6 sq-p">f6</p></div>
+                    <div class="square g6"><p class="sq-g6 sq-p">g6</p></div>
+                    <div class="square2 h6"><p class="sq-h6 sq-p">h6</p></div>
+
+                    <div class="square2 a5"><p class="sq-a5 sq-p">a5</p></div>
+                    <div class="square b5"><p class="sq-b5 sq-p">b5</p></div>
+                    <div class="square2 c5"><p class="sq-c5 sq-p">c5</p></div>
+                    <div class="square d5"><p class="sq-d5 sq-p">d5</p></div>
+                    <div class="square2 e5"><p class="sq-e5 sq-p">e5</p></div>
+                    <div class="square f5"><p class="sq-f5 sq-p">f5</p></div>
+                    <div class="square2 g5"><p class="sq-g5 sq-p">g5</p></div>
+                    <div class="square h5"><p class="sq-h5 sq-p">h5</p></div>
+
+                    <div class="square a4"><p class="sq-a4 sq-p">a4</p></div>
+                    <div class="square2 b4"><p class="sq-b4 sq-p">b4</p></div>
+                    <div class="square c4"><p class="sq-c4 sq-p">c4</p></div>
+                    <div class="square2 d4"><p class="sq-d4 sq-p">d4</p></div>
+                    <div class="square e4"><p class="sq-e4 sq-p">e4</p></div>
+                    <div class="square2 f4"><p class="sq-f4 sq-p">f4</p></div>
+                    <div class="square g4"><p class="sq-g4 sq-p">g4</p></div>
+                    <div class="square2 h4"><p class="sq-h4 sq-p">h4</p></div>
+
+                    <div class="square2 a3"><p class="sq-a3 sq-p">a3</p></div>
+                    <div class="square b3"><p class="sq-b3 sq-p">b3</p></div>
+                    <div class="square2 c3"><p class="sq-c3 sq-p">c3</p></div>
+                    <div class="square d3"><p class="sq-d3 sq-p">d3</p></div>
+                    <div class="square2 e3"><p class="sq-e3 sq-p">e3</p></div>
+                    <div class="square f3"><p class="sq-f3 sq-p">f3</p></div>
+                    <div class="square2 g3"><p class="sq-g3 sq-p">g3</p></div>
+                    <div class="square h3"><p class="sq-h3 sq-p">h3</p></div>
+
+                    <div class="square"><img src="img/02-pawn.png" alt="pawn" class="piece-pawn pieces-img"></div>
+                    <div class="square2"><img src="img/02-pawn.png" alt="pawn" class="piece-pawn pieces-img"></div>
+                    <div class="square"><img src="img/02-pawn.png" alt="pawn" class="piece-pawn pieces-img"></div>
+                    <div class="square2"><img src="img/02-pawn.png" alt="pawn" class="piece-pawn pieces-img"></div>
+                    <div class="square"><img src="img/02-pawn.png" alt="pawn" class="piece-pawn pieces-img"></div>
+                    <div class="square2"><img src="img/02-pawn.png" alt="pawn" class="piece-pawn pieces-img"></div>
+                    <div class="square"><img src="img/02-pawn.png" alt="pawn" class="piece-pawn pieces-img"></div>
+                    <div class="square2"><img src="img/02-pawn.png" alt="pawn" class="piece-pawn pieces-img"></div>
+
+                    <div class="square2"><img src="img/05-rook.png" alt="rook" class="piece-rook pieces-img"></div>
+                    <div class="square"><img src="img/01-knight.png" alt="knight" class="piece-knight pieces-img"></div>
+                    <div class="square2"><img src="img/04-bishop.png" alt="bishop" class="piece-bishop pieces-img"></div>
+                    <div class="square"><img src="img/06-queen.png" alt="queen" class="piece-queen pieces-img"></div>
+                    <div class="square2"><img src="img/03-king.png" alt="king" class="piece-king pieces-img"></div>
+                    <div class="square"><img src="img/04-bishop.png" alt="bishop" class="piece-bishop pieces-img"></div>
+                    <div class="square2"><img src="img/01-knight.png" alt="knight" class="piece-knight pieces-img"></div>
+                    <div class="square"><img src="img/05-rook.png" alt="rook" class="piece-rook pieces-img"></div>
+                </div>
+
+                <div class="chess-notation2">
+                    <div class="notation">A</div>
+                    <div class="notation">B</div>
+                    <div class="notation">C</div>
+                    <div class="notation">D</div>
+                    <div class="notation">E</div>
+                    <div class="notation">F</div>
+                    <div class="notation">G</div>
+                    <div class="notation">H</div>
+                </div>   
+
+        </div>
+      </div>
+  </body>
+</html>
+<!-- Chess pieces authors : https://www.flaticon.com/authors/freepik - black pieces
+                         : https://www.flaticon.com/authors/bzzrincantation - white pieces
+     Background image author  : https://www.pexels.com/pl-pl/@syed-hasan-mehdi-270838/ -->

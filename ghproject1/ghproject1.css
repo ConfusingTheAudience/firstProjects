@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100%;
+  color: white;
+}
+#chess-container {
+  padding: 30px;
+  background-image: url(img/chess-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.chesstext {
+  font-size: 40px;
+  text-align: center;
+  padding: 15px;
+}
+.chesstext2 {
+  text-align: center;
+  font-size: 15px;
+}
+.chess-box {
+  width: 850px;
+  padding-top: 25px;
+  height: 850px;
+  background-color: brown;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 30px;
+  position: relative;
+  /* box-shadow: 0 0 1em lightgreen; */
+  animation: 3s animationcolor infinite;
+  /* border: 1px solid lightgreen;
+    outline: 0; */
+}
+@keyframes animationcolor {
+  0% {
+    box-shadow: 0 0 1em red;
+  }
+  25% {
+    box-shadow: 0 0 1em blue;
+  }
+  50% {
+    box-shadow: 0 0 1em lightgreen;
+  }
+  75% {
+    box-shadow: 0 0 1em azure;
+  }
+  100% {
+    box-shadow: 0 0 1em crimson;
+  }
+}
+.chess-notation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 80px;
+  margin-top: 75px;
+  margin-left: 5px;
+}
+.chess-notation2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  gap: 90px;
+  margin-left: 60px;
+}
+.board {
+  width: 800px;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.square,
+.square2 {
+  width: 100px;
+  height: 100px;
+}
+.square {
+  background-color: white;
+  cursor: pointer;
+}
+.square2 {
+  background-color: black;
+  cursor: pointer;
+}
+.pieces-img {
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 18px;
+}
+.square:hover .pieces-img,
+.square2:hover .pieces-img {
+  display: block;
+  cursor: pointer;
+}
+.sq-p {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 50px;
+  color: purple;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.sq-e4,
+.sq-d4,
+.sq-e5,
+.sq-d5 {
+  color: lime;
+}
+.e4:hover,
+.d4:hover {
+  background-color: #1e90ff;
+}
+.d5:hover,
+.e5:hover {
+  background-color: #7b68ee;
+}
+
+/* DISAPPEARANCE SQUARES */
+.board .sq-a6,
+.board .sq-a5,
+.board .sq-a4,
+.board .sq-a3,
+.board .sq-b6,
+.board .sq-b5,
+.board .sq-b4,
+.board .sq-b3,
+.board .sq-c6,
+.board .sq-c5,
+.board .sq-c4,
+.board .sq-c3,
+.board .sq-d6,
+.board .sq-d5,
+.board .sq-d4,
+.board .sq-d3,
+.board .sq-e6,
+.board .sq-e5,
+.board .sq-e4,
+.board .sq-e3,
+.board .sq-f6,
+.board .sq-f5,
+.board .sq-f4,
+.board .sq-f3,
+.board .sq-g6,
+.board .sq-g5,
+.board .sq-g4,
+.board .sq-g3,
+.board .sq-h6,
+.board .sq-h5,
+.board .sq-h4,
+.board .sq-h3 {
+  display: none;
+}
+.board .a6:hover .sq-a6,
+.board .a5:hover .sq-a5,
+.board .a4:hover .sq-a4,
+.board .a3:hover .sq-a3,
+.board .b6:hover .sq-b6,
+.board .b5:hover .sq-b5,
+.board .b4:hover .sq-b4,
+.board .b3:hover .sq-b3,
+.board .c6:hover .sq-c6,
+.board .c5:hover .sq-c5,
+.board .c4:hover .sq-c4,
+.board .c3:hover .sq-c3,
+.board .d6:hover .sq-d6,
+.board .d5:hover .sq-d5,
+.board .d4:hover .sq-d4,
+.board .d3:hover .sq-d3,
+.board .e6:hover .sq-e6,
+.board .e5:hover .sq-e5,
+.board .e4:hover .sq-e4,
+.board .e3:hover .sq-e3,
+.board .f6:hover .sq-f6,
+.board .f5:hover .sq-f5,
+.board .f4:hover .sq-f4,
+.board .f3:hover .sq-f3,
+.board .g6:hover .sq-g6,
+.board .g5:hover .sq-g5,
+.board .g4:hover .sq-g4,
+.board .g3:hover .sq-g3,
+.board .h6:hover .sq-h6,
+.board .h5:hover .sq-h5,
+.board .h4:hover .sq-h4,
+.board .h3:hover .sq-h3 {
+  display: block;
+}
