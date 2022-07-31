@@ -1,3 +1,3 @@
-# firstProjects
+# firstProject
 HTML + CSS
 Visual Chessboard
